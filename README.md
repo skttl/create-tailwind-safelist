@@ -20,7 +20,7 @@ This helps ensure that all necessary Tailwind classes are included in your produ
 npx tailwind-safelist-generator@latest <patternsFile> [options]
 ```
 
-- <patternsFile>: Path to a JavaScript file containing an array of regex patterns.
+- `<patternsFile>`: Path to a JavaScript file containing an array of regex patterns.
 
 ### Options
 - `-o`, `--output` <outputFile>: Path to the output file (default: tailwind-safelist.txt).

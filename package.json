@@ -1,5 +1,5 @@
 {
-  "name": "tailwind-safelist-generator",
+  "name": "create-tailwind-safelist",
   "version": "0.1.0",
   "description": "Generates a Tailwind safelist.txt file from regex patterns.",
   "repository": {
@@ -8,7 +8,7 @@
   },
   "main": "index.js",
   "bin": {
-    "tailwind-safelist-generator": "index.js"
+    "create-tailwind-safelist": "index.js"
   },
   "publishConfig": {
     "access": "public"

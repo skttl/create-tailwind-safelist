@@ -1,4 +1,4 @@
-# Tailwind CSS Safelist Generator
+# Create Tailwind CSS Safelist
 
 **Are you missing your regex based safelist after upgrading to Tailwind CSS 4?**
 
@@ -17,7 +17,7 @@ This helps ensure that all necessary Tailwind classes are included in your produ
 ## Usage
 
 ```bash
-npx tailwind-safelist-generator@latest <patternsFile> [options]
+npx create-tailwind-safelist@latest <patternsFile> [options]
 ```
 
 - `<patternsFile>`: Path to a JavaScript file containing an array of regex patterns.
@@ -40,14 +40,14 @@ module.exports = [
 To generate the safelist, run the following command:
 
 ```bash
-npx tailwind-safelist-generator@latest ./patterns.js -o ./my-safelist.txt
+npx create-tailwind-safelist@latest ./patterns.js -o ./my-safelist.txt
 ```
 
 This will read the patterns from `patterns.js` and write the generated safelist to `my-safelist.txt`. If you omit the `-o` option, the output will be written to `tailwind-safelist.txt`.
 
 ### Integrating with Tailwind CSS
 
-1. **Generate the safelist:** Run `tailwind-safelist-generator` to generate the `tailwind-safelist.txt` file.
+1. **Generate the safelist:** Run `create-tailwind-safelist` to generate the `tailwind-safelist.txt` file.
 2. **Configure Tailwind CSS:** If you add `tailwind-safelist.txt` to your `.gitignore` file, you need to [manually specify it as a source](https://tailwindcss.com/docs/detecting-classes-in-source-files#explicitly-registering-sources) in your css file.
 
 ## Regex Pattern Restrictions

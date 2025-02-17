@@ -1,0 +1,30 @@
+{
+  "name": "tailwind-safelist-generator",
+  "version": "0.1.0",
+  "description": "Generates a Tailwind safelist.txt file from regex patterns.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skttl/tailwind-safelist-generator"
+  },
+  "main": "index.js",
+  "bin": {
+    "tailwind-safelist-generator": "index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "tailwindcss"
+  ],
+  "author": "Søren Kottal",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^13.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

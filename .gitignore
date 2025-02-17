@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+patterns.js
+safelist.txt
+tailwind-safelist.txt

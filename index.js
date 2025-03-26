@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const fs = require('fs');
+const path = require('path');
 const { program } = require('commander');
 const { version } = require('./package.json');
 const { generateMatches } = require('./generator.js');
@@ -19,9 +20,10 @@ program
 const patternsFile = program.args[0];
 const outputFile = program.opts().output;
 
-
 try {
-  const patterns = require(patternsFile);
+  // Convert relative path to absolute path based on current working directory
+  const absolutePatternsPath = path.resolve(process.cwd(), patternsFile);
+  const patterns = require(absolutePatternsPath);
 
   let matches = [];
   patterns.forEach((pattern) => {

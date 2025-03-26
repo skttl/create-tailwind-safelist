@@ -1,6 +1,6 @@
 {
   "name": "create-tailwind-safelist",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generates a Tailwind safelist.txt file from regex patterns.",
   "repository": {
     "type": "git",
